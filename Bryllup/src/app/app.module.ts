@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,12 +15,13 @@ import { CountDownComponent } from './Components/count-down/count-down.component
     NavigationBarComponent,
     HeaderComponent,
     ContentComponent,
-    CountDownComponent
+    CountDownComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
+  exports: [MatButtonModule],
   providers: [],
   bootstrap: [AppComponent]
 })

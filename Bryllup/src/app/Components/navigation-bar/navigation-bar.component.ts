@@ -12,4 +12,9 @@ export class NavigationBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollToElement(selector) {
+    const element = document.querySelector(selector)
+    element ? element.scrollIntoView({behavior: "smooth"}): null;
+  }
+
 }
