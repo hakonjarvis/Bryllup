@@ -12,6 +12,10 @@ export class ContentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
+}
+
   
 
 }

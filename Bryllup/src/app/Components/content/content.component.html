@@ -1,41 +1,73 @@
 <div class="container">
-    <img class="image-fit-window" src="assets/images/velkommen-svart-hvitt-cropped.jpg">
+    <div class="container justify-content-center navbar">
+        <div class="row navbar-font">
+            <div class="col">
+                <!-- <button mat-flat-button>Link1</button> -->
+            </div>
+            <div class="col">
+                <button (click)="scroll(welcome)">Velkommen</button>
+            </div>
+            <div class="col">
+                <button (click)="scroll(program)">program</button>
+            </div>
+            <div class="col">
+                <button (click)="scroll(program)">Velkommen</button>
+            </div>
+            <div class="col">
+                <button (click)="scroll(rsvp)">RSVP</button>
+            </div>
+            <div class="col">
+                <button (click)="scroll(speach)">Taler</button>
+            </div>
+        </div>
+    </div>
+    <img class="image-fit-window" src="assets/images/velkommen-svart-hvitt-cropped.jpg" style="border-radius: 5px;">
     <div class="container">
-        <div class="count-down">
+        <!-- <div class="count-down">
             <div class="row">
                 <div class="col">
                     <app-count-down></app-count-down>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="row d-flex align-content-center content">
             <div class="col d-flex justify-content-center content-body">Vi er glad for å kunne invitere deg/dere til
                 vårt Bryllup. På denne siden vil dere finne all informasjon dere trenger foran bryllupshelgen.</div>
-            <div class="col d-flex justify-content-center content-title" id="welcome">Velkommen!</div>
+            <div class="col d-flex justify-content-center content-title" #welcome>Velkommen!</div>
+        </div>
+
+        <div class="row d-flex align-content-center content" #program>
+            <div class="col d-flex justify-content-center content-body">
+                <!-- <ul>
+                    <li>Aktivitet</li>
+                    <li>Aktivitet</li>
+                    <li>Aktivitet</li>
+                    <li>Aktivitet</li>
+                    <li>Aktivitet</li>
+                    <li>Aktivitet</li>
+                    <li>Aktivitet</li>
+                </ul> -->
+                <p>Kommer senere</p>
+            </div>
+            <div class="col d-flex justify-content-center content-title">Program</div>
         </div>
 
         <div class="row d-flex align-content-center content">
             <div class="col d-flex justify-content-center content-body">
-                <ul>
-                    <li>Aktivitet</li>
-                    <li>Aktivitet</li>
-                    <li>Aktivitet</li>
-                    <li>Aktivitet</li>
-                    <li>Aktivitet</li>
-                    <li>Aktivitet</li>
-                    <li>Aktivitet</li>
-                </ul>
+
+                <p>Vi vil gjerne vite om du/dere har anledning å komme senest 1. april.</p>
+
             </div>
-            <div class="col d-flex justify-content-center content-title" #program>Program</div>
+            <div class="col d-flex justify-content-center content-title" #rsvp>RSVP</div>
         </div>
 
         <div class="row d-flex align-content-center content">
             <div class="col d-flex justify-content-center content-body">
 
-                Vi vil gjerne vite om du/dere har anledning å komme senest 1. april.
+                <p>Ønsker du å holde tale? Send mail til våre eminente toastmastere på <a href="mailto:toastmasterelineoghakon@gmail.com">toastmasterelineoghakon@gmail.com</a></p>.
 
             </div>
-            <div class="col d-flex justify-content-center content-title" id="rsvp">RSVP</div>
+            <div class="col d-flex justify-content-center content-title" #speach>Taler</div>
         </div>
 
         <div class="row d-flex align-content-center content">

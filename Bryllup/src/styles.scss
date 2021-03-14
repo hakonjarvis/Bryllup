@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Ballet&family=Dancing+Script&family=Lobster&family=Source+Serif+Pro:wght@300&display=swap');
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
 .wedding-font {
     font-family: 'Dancing Script', cursive;
     font-weight: 500;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .navbar-font {
@@ -50,6 +51,7 @@
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
+    border-radius: 3px;
 }
 
 .content-body {
@@ -64,5 +66,27 @@
     align-self: center;
     font-size: 50px;
 }
-html, body { height: 100%; }
+html, body { height: 100%; width: 100%;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@media (max-height: 700px) {
+    .content-title {
+        font-family: 'Source Serif Pro', cursive;
+        text-align: center;
+        align-self: center;
+        font-size: 24px;
+    }
+
+    .content-body {
+        font-family: 'Source Serif Pro', cursive;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .wedding-font {
+        font-family: 'Dancing Script', cursive;
+        font-weight: 500;
+        font-size: 24px;
+        text-align: center;
+    }
+}
