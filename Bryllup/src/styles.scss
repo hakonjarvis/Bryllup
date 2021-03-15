@@ -10,14 +10,16 @@
 .navbar-font {
     font-family: 'Source Serif Pro', cursive;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     color: #60684C;
 }
 
 .navbar {
     margin-top: 10px;
-    
-    background-color: #ffffff;
+    margin-bottom: 10px;    
+    background-color: #C2D8CE;
+    color: #000000;
+    text-underline-position: below;
     height: 50px;
     border-radius: 2px;
 }
